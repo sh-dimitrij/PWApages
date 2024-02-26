@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Header from "./components/Header/Header";
 import {Work} from "./utils/types";
 import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
-import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom';
+import {HashRouter, Route, Routes, Navigate} from 'react-router-dom';
 import WorkPage from "./pages/WorkPage/WorkPage";
 import WorksList from "./pages/WorksList/WorksList";
 // import ProfilePage from "./pages/ProfilePage/ProfilePage";
@@ -14,7 +14,7 @@ function App() {
     const [selectedWork, setSelectedWork] = useState<Work | undefined>(undefined)
 
     return (
-        <BrowserRouter basename="/fablab">
+        <HashRouter basename="/pwapages">
 
             <div className="App">
 
@@ -42,7 +42,7 @@ function App() {
 
             </div>
 
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
