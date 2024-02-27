@@ -14,7 +14,7 @@ function App() {
     const [selectedWork, setSelectedWork] = useState<Work | undefined>(undefined)
 
     return (
-        <HashRouter basename="/pwapages">
+        <HashRouter>
 
             <div className="App">
 
